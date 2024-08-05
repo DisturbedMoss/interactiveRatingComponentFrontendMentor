@@ -1,0 +1,131 @@
+:root{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items: center;
+    background-color: #1c1c28;
+    height: 100vh;
+    width: 100vw;
+}
+.content{
+    padding: 2.5rem;
+    background-color: #282832;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #dcdcdc;
+    width: 25%;
+    height: 45%;
+    border-radius: 10%;
+    box-shadow: 0.5px 0.5px 20px 0.5px #191924;
+}
+.contentGrid{
+    display: grid;/*Grid*/
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+p{
+    margin-top: 1.1rem;
+    word-break: break-all;
+}
+section, form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+section{
+    margin-top: 2.2rem;
+}
+.ratingLabel{
+    font-size: 12px;
+    color: #dcdcdc;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    background-color: #2a2a33;
+    font-size: 1.5rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 1px solid #555;
+    border-radius: 50%;
+}
+.ratingInput{
+    display: none;
+}
+button{
+    background-color: #ff6347;
+    border: none;
+    cursor: pointer;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 10rem;
+    width: 100%;
+    transition: all .1s;
+    box-shadow: .5px .5px 7px .5px #282832;
+}
+.ratingLabel:hover{
+    background-color: #ff5739;
+    box-shadow: 0.5px 0.5px 7px 0.5px #ff5739;
+}
+button:hover{
+    background-color: #ff5739;
+    box-shadow: 0.5px 0.5px 7px 0.5px #ff5739;
+}
+button:active{
+    background-color: #dcdcdc;
+    color: #282832;
+    box-shadow: 0.5px 0.5px 7px 0.5px #dcdcdc;
+}
+.active{
+    background-color: #dcdcdc;
+    color: #282832;
+    box-shadow: 0.5px 0.5px 7px 0.5px #dcdcdc;
+}
+.contentThank{
+    display: none;/*none*/
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    place-items: center;
+}
+.imgThank{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+#pRating{
+    color: #ff6347;
+    margin: 0;
+}
+.divPRating{
+    padding: 0.5rem;
+    background-color: #30303a;
+    display: grid;
+    place-items: center;
+    border-radius: 3rem;
+    width: 50%;
+}
+h1{
+    margin-bottom: 0.5rem;
+}
+@media(max-width: 1200px) {
+    .content{
+        padding: 1.1rem;
+        width: 268px;
+        height: 280px;
+        border-radius: 10%;
+    }
+}

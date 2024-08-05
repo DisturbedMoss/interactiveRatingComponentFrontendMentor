@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/dd3de5b379.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="contentGrid">
+            <p><span><i class="fa-solid fa fa-star" style="color: #ff6347;"></i></span></p>
+            
+            <p>
+                <h3>How did we do?</h3>
+                Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+            </p>
+            
+            <form>
+                    <input type="radio" id="ratingInputId-1" name="radio" class="ratingInput" checked>
+                    <label class="ratingLabel label1" for="ratingInputId-1">1</label>
+
+                    <input type="radio" id="ratingInputId-1" name="radio" class="ratingInput">
+                    <label class="ratingLabel label2" for="ratingInputId-2">2</label>
+                
+                    <input type="radio" id="ratingInputId-1" name="radio" class="ratingInput">
+                    <label class="ratingLabel label3" for="ratingInputId-3">3</label>
+                
+                    <input type="radio" id="ratingInputId-1" name="radio" class="ratingInput">
+                    <label class="ratingLabel label4" for="ratingInputId-4">4</label>
+                
+                    <input type="radio" id="ratingInputId-1" name="radio" class="ratingInput">   
+                    <label class="ratingLabel label5" for="ratingInputId-5">5</label>
+            </form>
+            <section><button id="Btn">Submit</button></section>
+        </div>
+
+        <div class="contentThank">
+            <div class="imgThank"><img src="./img/interactive-rating-component-main/images/illustration-thank-you.svg" alt="Cellphone illustration"></div>
+
+            <div class="divPRating"><p id="pRating">You Selected 'rating' out of 5</p></div>
+            <p>
+                <h1>Thank you!</h1>
+                We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
+            </p>
+        </div>
+    </div>
+    <script src="./script.js" defer></script>
+</body>
+</html>
